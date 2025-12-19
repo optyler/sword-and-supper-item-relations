@@ -275,7 +275,7 @@ const InteractionSystem = ({ items = itemsData }) => {
                         >
                           <div className="flex items-center gap-2">
                             {item.assetName ? (
-                              <img src={`/itemIcons/${item.assetName}.png`} alt={item.name} className="w-8 h-8" />
+                              <img src={`${import.meta.env.BASE_URL}itemIcons/${item.assetName}.png`} alt={item.name} className="w-8 h-8" />
                             ) : (
                               <span className="w-8 h-8 flex items-center justify-center text-xl">{getTagIcon(getItemType(item))}</span>
                             )}
@@ -346,7 +346,7 @@ const InteractionSystem = ({ items = itemsData }) => {
                       </div>
                     </div>
                     {selectedItem.assetName ? (
-                      <img src={`/itemIcons/${selectedItem.assetName}.png`} alt={selectedItem.name} className="w-16 h-16 object-contain" />
+                      <img src={`${import.meta.env.BASE_URL}itemIcons/${selectedItem.assetName}.png`} alt={selectedItem.name} className="w-16 h-16 object-contain" />
                     ) : (
                       <span className="text-3xl">{getTagIcon(getItemType(selectedItem))}</span>
                     )}
@@ -392,7 +392,7 @@ const InteractionSystem = ({ items = itemsData }) => {
                             >
                               <div className={`font-semibold flex items-center gap-2 ${getRarityColor(item.rarity)}`}>
                                                                 {item.assetName ? (
-                                  <img src={`/itemIcons/${item.assetName}.png`} alt={item.name} className="w-8 h-8 object-contain mr-2" />
+                                  <img src={`${import.meta.env.BASE_URL}itemIcons/${item.assetName}.png`} alt={item.name} className="w-8 h-8 object-contain mr-2" />
                                 ) : (
                                   <span>{getTagIcon(getItemType(item))}</span>
                                 )}
@@ -428,7 +428,7 @@ const InteractionSystem = ({ items = itemsData }) => {
                             >
                               <div className={`font-semibold flex items-center gap-2 ${getRarityColor(item.rarity)}`}>
                                                                 {item.assetName ? (
-                                  <img src={`/itemIcons/${item.assetName}.png`} alt={item.name} className="w-8 h-8 object-contain mr-2" />
+                                  <img src={`${import.meta.env.BASE_URL}itemIcons/${item.assetName}.png`} alt={item.name} className="w-8 h-8 object-contain mr-2" />
                                 ) : (
                                   <span>{getTagIcon(getItemType(item))}</span>
                                 )}
